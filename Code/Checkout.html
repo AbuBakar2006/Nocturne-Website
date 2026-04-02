@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="Function.js"></script>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li>
+          <img src="images/Logo.jpg" class="header-logo" />
+        </li>
+        <li>
+          <a href="Homepage.html">HOME</a>
+          <a href="Products.html">PRODUCTS</a>
+          <a href="Contact.html">CONTACT</a>
+          <a href="AboutUs.html">ABOUT US</a>
+        </li>
+
+        <li>
+          <a href="Login.html">
+            <img src="images/user.svg" class="header-icon" />
+          </a>
+          <a href="Cart.html">
+            <img src="images/shopping-cart.svg" class="header-icon" />
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main class="page-main checkout-page">
+      <div class="page-header">
+        <h1>Checkout</h1>
+        <p>Complete your purchase securely.</p>
+      </div>
+
+      <div class="checkout-container">
+        <div class="checkout-forms">
+          <!-- Shipping Address -->
+          <div class="checkout-section">
+            <h2>Shipping Address</h2>
+            <div class="checkout-form">
+              <div class="form-row">
+                <div class="input-group">
+                  <label>First Name</label>
+                  <input type="text" placeholder="John" required />
+                </div>
+                <div class="input-group">
+                  <label>Last Name</label>
+                  <input type="text" placeholder="Doe" required />
+                </div>
+              </div>
+              <div class="input-group">
+                <label>Street Address</label>
+                <input type="text" placeholder="123 Fashion Blvd" required />
+              </div>
+              <div class="form-row">
+                <div class="input-group">
+                  <label>City</label>
+                  <input type="text" placeholder="New York" required />
+                </div>
+                <div class="input-group">
+                  <label>ZIP Code</label>
+                  <input type="text" placeholder="10001" required />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment -->
+          <div class="checkout-section">
+            <h2>Payment Method</h2>
+            <div class="checkout-form">
+              <div class="input-group">
+                <label>Name on Card</label>
+                <input type="text" placeholder="John Doe" required />
+              </div>
+              <div class="input-group">
+                <label>Card Number</label>
+                <input type="text" placeholder="0000 0000 0000 0000" required />
+              </div>
+              <div class="form-row">
+                <div class="input-group">
+                  <label>Expiry Date</label>
+                  <input type="text" placeholder="MM/YY" required />
+                </div>
+                <div class="input-group">
+                  <label>CVV</label>
+                  <input type="text" placeholder="123" required />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary-panel">
+          <h2>Order Summary</h2>
+          <div class="summary-item">
+            <span>Classic T-Shirt</span>
+            <span>Rs. 2,599</span>
+          </div>
+          <div class="summary-item">
+            <span>Classic Hoodie</span>
+            <span>Rs. 3,799</span>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>Rs. 6,398</span>
+          </div>
+          <div class="summary-row">
+            <span>Shipping</span>
+            <span>Rs. 300</span>
+          </div>
+          <div class="summary-row">
+            <span>Tax</span>
+            <span>Rs. 270</span>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span>Rs. 6,968</span>
+          </div>
+
+          <button
+            class="checkout-btn"
+            onclick="window.location.href = 'Orders.html'"
+          >
+            Complete Purchase
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <br class="Line" />
+    <footer class="site-footer">
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <a href="Homepage.html">Home</a>
+        <a href="Products.html">Products</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Contact.html">Contact</a>
+      </div>
+      <div class="footer-column">
+        <h3>Customer Service</h3>
+        <a href="FutureUpdate.html">Terms & Services</a>
+        <a href="FutureUpdate.html">Delivery / Exchange / Return Policy</a>
+        <a href="FutureUpdate.html">Privacy Policy</a>
+      </div>
+      <div class="footer-column">
+        <h3>Newsletter</h3>
+        <p>
+          Subscribe to get special offers, free giveaways, and
+          once-in-a-lifetime deals.
+        </p>
+        <div class="newsletter-form">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="newsletter-input"
+          />
+          <button class="newsletter-btn">Subscribe</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
